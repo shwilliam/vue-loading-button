@@ -58,8 +58,8 @@ export default {
   line-height: 28px;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   transition-timing-function: ease-in;
   overflow: hidden;
 }
@@ -68,6 +68,9 @@ export default {
   box-shadow: 0 0 0 3px lightblue,
     0 0 0 1.5px lightblue;
 }
+.vue-loading-button:not(.loading) {
+  transition-delay: 0.3s;
+}
 .vue-loading-button > .spinner {
   line-height: 1.15;
   position: absolute;
@@ -75,8 +78,8 @@ export default {
   left: auto;
   right: 1.2em;
   margin: -0.5em;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   transition-timing-function: ease-in;
 }
 .spinner span {
@@ -94,6 +97,10 @@ export default {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   transition-timing-function: ease;
+  transition-delay: 0.2s;
+}
+.vue-loading-button:not(.loading) .spinner span {
+  transition-delay: 0s;
 }
 .spinner span:nth-child(1) {
   animation-delay: -0.45s;
