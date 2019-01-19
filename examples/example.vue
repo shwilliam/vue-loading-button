@@ -1,6 +1,6 @@
 <template>
   <div class="example">
-    <VueLoadingButton class="button" />
+    <VueLoadingButton @click.native="handleClick" :loading="isLoading" />
   </div>
 </template>
 
@@ -9,7 +9,15 @@ import VueLoadingButton from "../src/vue-loading-button.vue";
 export default {
   name: "Example",
   data() {
-    return {};
+    return {
+      isLoading: false,
+    };
+  },
+  methods: {
+    handleClick() {
+      console.log('click') /* eslint-disable-line */
+      this.isLoading = !this.isLoading
+    },
   },
   components: {
     VueLoadingButton
@@ -18,6 +26,7 @@ export default {
 </script>
 
 <style scoped>
-.example {}
-.button {}
+.example {
+  font-family: sans-serif;
+}
 </style>
