@@ -7,7 +7,7 @@ export default {
       required: false,
       default: false
     },
-  },
+  }
 };
 </script>
 
@@ -54,9 +54,9 @@ export default {
   border: solid 1px transparent;
   border-radius: 4px;
   cursor: pointer;
-  padding: 8px 14px;
-  line-height: 28px;
-  font-size: 20px;
+  padding: 8px 16px;
+  line-height: 1.9rem;
+  font-size: 1.4rem;
   position: relative;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -69,14 +69,14 @@ export default {
     0 0 0 1.5px lightblue;
 }
 .vue-loading-button:not(.loading) {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
-.vue-loading-button > .spinner {
+.spinner {
   line-height: 1.15;
   position: absolute;
   top: 50%;
   left: auto;
-  right: 1.2em;
+  right: 1.28em;
   margin: -0.5em;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -87,29 +87,46 @@ export default {
   display: inline-block;
   position: absolute;
   right: 0;
-  width: 20px;
-  height: 20px;
+  width: 1.2rem;
+  height: 1.2rem;
   opacity: 0;
-  border: 4px solid #fff;
+  border: 3.4px solid #fff;
   border-radius: 50%;
   animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fff transparent transparent transparent;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
   transition-timing-function: ease;
+}
+.spinner span {
   transition-delay: 0.2s;
 }
-.vue-loading-button:not(.loading) .spinner span {
-  transition-delay: 0s;
-}
 .spinner span:nth-child(1) {
-  animation-delay: -0.45s;
+  animation-delay: 0.45s;
 }
 .spinner span:nth-child(2) {
-  animation-delay: -0.3s;
+  animation-delay: 0.3s;
 }
 .spinner span:nth-child(3) {
-  animation-delay: -0.15s;
+  animation-delay: 0.15s;
+}
+.vue-loading-button:not(.loading) .spinner span {
+  box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 1);
+  border: 10.4px solid #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.vue-loading-button:not(.loading) .spinner span:nth-child(1) {
+  transform: rotate(0deg) !important;
+}
+.vue-loading-button:not(.loading) .spinner span:nth-child(2) {
+  transform: rotate(90deg) !important;
+}
+.vue-loading-button:not(.loading) .spinner span:nth-child(3) {
+  transform: rotate(180deg) !important;
+}
+.vue-loading-button:not(.loading) .spinner span:nth-child(4) {
+  transform: rotate(270deg) !important;
 }
 @keyframes spinner {
   0% {
@@ -120,7 +137,7 @@ export default {
   }
 }
 .loading {
-  padding-right: 2.5em;
+  padding-right: 2.3em;
 }
 .loading .spinner span {
   opacity: 1;

@@ -1,6 +1,6 @@
 {
   "name": "vue-loading-button",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "license": "MIT",
   "main": "dist/vue-loading-button.umd.js",
@@ -10,7 +10,6 @@
     "./sfc": "src/vue-loading-button.vue"
   },
   "scripts": {
-    "dev": "vue serve ./src/vue-loading-button.vue",
     "example": "vue serve ./examples/example.vue",
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-loading-button.umd.js",

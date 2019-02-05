@@ -1,6 +1,6 @@
 <template>
   <div class="example">
-    <VueLoadingButton @click.native="handleClick" :loading="isLoading" />
+    <VueLoadingButton class="button" @click.native="handleClick" :loading="isLoading" />
   </div>
 </template>
 
@@ -28,5 +28,8 @@ export default {
 <style scoped>
 .example {
   font-family: sans-serif;
+}
+.button {
+  background-color: coral;
 }
 </style>
