@@ -10,7 +10,7 @@
     "./sfc": "src/vue-loading-button.vue"
   },
   "scripts": {
-    "example": "npm run build & vue serve ./examples/example.vue",
+    "example": "vue serve ./examples/example.vue",
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-loading-button.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-loading-button.esm.js",
