@@ -1,6 +1,23 @@
 <template>
   <div class="example">
-    <VueLoadingButton class="button" @click.native="handleClick" :loading="isLoading" />
+    <p>
+      Click button to trigger loading simulation,
+      click
+      <button type="button" @click="isStyled = !isStyled">here</button>
+      to
+      {{
+      isStyled ?
+      'unstyle' :
+      'style'
+      }}
+    </p>
+    <VueLoadingButton
+      aria-label="Post message"
+      class="button"
+      @click.native="handleClick"
+      :loading="isLoading"
+      :styled="isStyled"
+    >Send</VueLoadingButton>
   </div>
 </template>
 
@@ -11,13 +28,15 @@ export default {
   data() {
     return {
       isLoading: false,
+      isStyled: true
     };
   },
   methods: {
     handleClick() {
-      console.log('click') /* eslint-disable-line */
-      this.isLoading = !this.isLoading
-    },
+      console.log("click"); /* eslint-disable-line */
+      this.isLoading = true;
+      setTimeout(() => (this.isLoading = false), 1300);
+    }
   },
   components: {
     VueLoadingButton
@@ -28,8 +47,10 @@ export default {
 <style scoped>
 .example {
   font-family: sans-serif;
+  text-align: center;
 }
-.button {
+/* .button {
   background-color: coral;
-}
+  border-radius: 3px;
+} */
 </style>
