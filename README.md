@@ -1,8 +1,10 @@
 # vue-loading-button
 
-> Straightforward Vue button component with slideout loading indicator
+> Straightforward Vue button with slideout loading indicator
 
-[![Try it on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/4zywwyjxw7)
+![example use](https://user-images.githubusercontent.com/38357771/52435345-9fe26a00-2adf-11e9-832e-497ffa480d05.gif)
+
+[![try it on codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/4zywwyjxw7)
 
 ## Props
 
@@ -13,7 +15,7 @@
 
 ## Installation
 
-Install the package from npm by running
+Install the package from npm by running:
 
 ```
 $ npm i vue-loading-button
@@ -29,36 +31,43 @@ $ yarn add vue-loading-button
 
 Import, register and place the component in your Vue app.
 
-```
+```html
 <template>
-  [...]
-    <VueLoadingButton />
-  [...]
+  <VueLoadingButton />
 </template>
+```
 
-<script>
+```js
 import VueLoadingButton from 'vue-loading-button'
 
-[...]
+export default {
   components: {
     VueLoadingButton,
-[...]
-</script>
+  }
+}
 ```
-
-## Dev
-
-Running example script requires @vue/cli and @vue/cli-service-global to be installed.
-Install globally by running `npm i --g @vue/cli @vue/cli-service-global` or `yarn add global vue/cli @vue/cli-service-global`
 
 ## Accessibility
 
 Apply attributes, such as aria-label, directly on the element to apply them to the button.
 
-```
+```html
 <template>
-  [...]
-    <VueLoadingButton aria-label='Send message' />
-  [...]
+  <VueLoadingButton aria-label='Send message' />
 </template>
 ```
+
+## Dev
+
+Running example script requires @vue/cli and @vue/cli-service-global to be installed.
+Install globally by running `npm i --g @vue/cli @vue/cli-service-global` or `yarn add global vue/cli @vue/cli-service-global`.
+
+## Contributing
+
+This project is open to and encourages contributions! Feel free to discuss any bug fixes/features in the [issues](https://github.com/shwilliam/vue-loading-button/issues). If you wish to work on this project:
+
+1.  [Fork the project](https://github.com/shwilliam/vue-loading-button/archive/master.zip)
+2.  Create your feature branch (`git checkout -b new-feature-branch`)
+3.  Commit your changes (`git commit -am 'add new feature'`)
+4.  Push to the branch (`git push origin new-feature-branch`)
+5.  [Submit a pull request!](https://github.com/shwilliam/vue-loading-button/pull/new/master)
