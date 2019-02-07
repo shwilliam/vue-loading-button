@@ -2,7 +2,9 @@
 
 > Straightforward Vue button with slideout loading indicator
 
-![example use](https://user-images.githubusercontent.com/38357771/52435345-9fe26a00-2adf-11e9-832e-497ffa480d05.gif)
+<div style="text-align:center">
+  <img src="https://user-images.githubusercontent.com/38357771/52435345-9fe26a00-2adf-11e9-832e-497ffa480d05.gif" alt="example use" style="width:300px;"/>
+</div>
 
 [![try it on codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/4zywwyjxw7)
 
