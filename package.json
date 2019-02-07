@@ -1,7 +1,7 @@
 {
   "name": "vue-loading-button",
-  "version": "0.1.2",
-  "description": "Vue button with slideout loading indicator",
+  "version": "0.1.3",
+  "description": "A Vue button component with slideout loading indicator",
   "license": "MIT",
   "main": "dist/vue-loading-button.umd.js",
   "module": "dist/vue-loading-button.esm.js",
@@ -16,10 +16,23 @@
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-loading-button.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-loading-button.min.js"
   },
+  "keywords": [
+    "vue",
+    "component",
+    "button",
+    "loading",
+    "load",
+    "indicator",
+    "spinner"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/shwilliam/vue-loading-button.git"
   },
+  "bugs": {
+    "url": "https://github.com/shwilliam/vue-loading-button/issues"
+  },
+  "homepage": "https://github.com/shwilliam/vue-loading-button#readme",
   "dependencies": {},
   "devDependencies": {
     "minimist": "^1.2.0",
