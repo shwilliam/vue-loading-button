@@ -2,6 +2,8 @@
 
 > Straightforward Vue button component with slideout loading indicator
 
+[![Try it on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/4zywwyjxw7)
+
 ## Props
 
 |Prop   |Type   |Default|Description                         |
