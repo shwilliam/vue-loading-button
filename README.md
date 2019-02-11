@@ -10,10 +10,10 @@
 
 ## Props
 
-|Prop   |Type   |Default|Description                         |
-|-------|-------|-------|------------------------------------|
-|loading|boolean|false  |Controls loading indicator animation|
-|styled |boolean|false  |Disables inessential default styles |
+|Prop   |Type   |Required|Default|Description                         |
+|-------|-------|--------|-------|------------------------------------|
+|loading|boolean|false   |false  |Controls loading indicator animation|
+|styled |boolean|false   |true   |Disables inessential default styles |
 
 ## Installation
 
