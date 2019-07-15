@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       isLoading: false,
-      isStyled: true
+      isStyled: false
     };
   },
   methods: {

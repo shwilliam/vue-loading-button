@@ -30,7 +30,7 @@ export default {
     styled: {
       type: Boolean,
       required: false,
-      default: true
+      default: false
     }
   }
 };
@@ -138,7 +138,7 @@ button:not(:disabled) .spinner span:nth-child(4) {
   }
 }
 
-/* default styles */
+/* optional styles */
 .default-styles {
   color: white;
   background-color: blue;

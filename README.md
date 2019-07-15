@@ -10,10 +10,10 @@
 
 ## Props
 
-|Prop   |Type   |Required|Default|Description                         |
-|-------|-------|--------|-------|------------------------------------|
-|loading|boolean|false   |false  |Controls loading indicator animation|
-|styled |boolean|false   |true   |Disables inessential default styles |
+| Prop    | Type    | Required | Default | Description                          |
+| ------- | ------- | -------- | ------- | ------------------------------------ |
+| loading | boolean | false    | false   | Controls loading indicator animation |
+| styled  | boolean | false    | false   | Enables opinionated sample styles    |
 
 ## Installation
 
@@ -40,13 +40,13 @@ Import, register and place the component in your Vue app.
 ```
 
 ```js
-import VueLoadingButton from 'vue-loading-button'
+import VueLoadingButton from 'vue-loading-button';
 
 export default {
   components: {
     VueLoadingButton,
-  }
-}
+  },
+};
 ```
 
 ## Accessibility
