@@ -1,6 +1,6 @@
 {
   "name": "vue-loading-button",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "A Vue button component with slideout loading indicator",
   "license": "MIT",
   "main": "dist/vue-loading-button.umd.js",
