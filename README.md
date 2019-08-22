@@ -3,7 +3,7 @@
 > Straightforward Vue button with slideout loading indicator
 
 <p align="left">
-  <img width="200" src="https://user-images.githubusercontent.com/38357771/52435345-9fe26a00-2adf-11e9-832e-497ffa480d05.gif" alt="Example use">
+  <img width="200" src="https://user-images.githubusercontent.com/38357771/63500819-712a5080-c47f-11e9-8655-7df011bbc557.gif" alt="Component example use">
 </p>
 
 [![try it on codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/4zywwyjxw7)
@@ -40,13 +40,13 @@ Import, register and place the component in your Vue app.
 ```
 
 ```js
-import VueLoadingButton from 'vue-loading-button';
+import VueLoadingButton from 'vue-loading-button'
 
 export default {
   components: {
     VueLoadingButton,
   },
-};
+}
 ```
 
 ## Accessibility
