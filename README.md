@@ -3,7 +3,7 @@
 > Straightforward Vue button with slideout loading indicator
 
 <p align="left">
-  <img width="200" src="https://user-images.githubusercontent.com/38357771/63500819-712a5080-c47f-11e9-8655-7df011bbc557.gif" alt="Component example use">
+  <img width="200" src="https://user-images.githubusercontent.com/38357771/52435345-9fe26a00-2adf-11e9-832e-497ffa480d05.gif" alt="Component example use">
 </p>
 
 [![try it on codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/4zywwyjxw7)
@@ -48,6 +48,9 @@ export default {
   },
 }
 ```
+
+> <p align="left"><img width="200" src="https://user-images.githubusercontent.com/38357771/63500819-712a5080-c47f-11e9-8655-7df011bbc557.gif" alt="Unstyled component example use"></p>
+> Note: By default, this button component will apply minimal styles to enable you to easily add your own implementation-specific CSS. To enable the more opinionated styles seen at the top of this file, pass a `styled` prop as `true` to the button.
 
 ## Accessibility
 
