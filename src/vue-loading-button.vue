@@ -7,6 +7,7 @@
     }"
     :disabled="loading"
     type="button"
+    @click.prevent="clickAction"
   >
     <slot>Submit</slot>
     <span class="spinner">
@@ -32,7 +33,12 @@ export default {
       required: false,
       default: false
     }
-  }
+  },
+  methods: {
+    clickAction(){
+      this.$emit('buttonAction');
+    }
+ }
 };
 </script>
 
